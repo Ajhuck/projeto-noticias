@@ -1,6 +1,6 @@
 
 #primary{
-  padding-block: 20px;
+  padding-block: var(--py-lg);
 
   div:nth-child(2){
     margin-inline: auto;
@@ -15,8 +15,18 @@
   }
 }
 #secondary{
-  padding-block: 14px;
+  padding-block: var(--py-base);
   border: solid 1px var(--stroke-color);
   border-inline: none;
-  justify-items: space-between;
+  justify-items: start;
+  gap: var(--gap-menu);
+  overflow: hidden;
+}
+@media (width>= 70em) {
+  #secondary{
+    padding-block: var(--py-base);
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
+  }
 }
