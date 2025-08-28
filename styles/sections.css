@@ -112,6 +112,28 @@ section header{
 #ai{
   grid-area: ai;
 
+  & article {
+    & > div:first-child {
+      order: 2;
+    }
+    & > div:last-child {
+      order: 1;
+      width: 100%;
+      flex: none;
+    }
+  }
+  @media (width>= 80em){
+    & article {
+      & > div:first-child {
+        order: 1;
+      }
+      & > div:last-child {
+        order: 2;
+        width: 100%;
+        flex: none;
+      }
+    }
+  }
   img{
     width: 176px;
     aspect-ratio: 1/1;
@@ -120,20 +142,19 @@ section header{
   
   p{
     margin-block: 4px;
+    color: var(--text-color-secondary);
+    font: var(--fw-base) var(--text-sm)/160% var(--font-family);
   }
   h3{
     margin-block: 8px;
-  }
-  #esquerda{
-
-  }
-  #direita{
-    
   }
 }
 
 aside{
   grid-area: aside;
+  .content-tag{
+      margin-bottom: 8px;
+    }
   #ads{    
     margin-bottom: 32px;
     img{

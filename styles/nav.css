@@ -20,6 +20,7 @@
   border-inline: none;
   justify-items: start;
   gap: var(--gap-menu);
+  white-space: nowrap;
   overflow: hidden;
 }
 @media (width>= 70em) {
